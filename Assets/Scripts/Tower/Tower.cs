@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Define;
 
 public abstract class Tower : MonoBehaviour
 {
     [Header("Tower Stat")]
+    public TowerType Type;
+    public string Name;
     public int Level;
     public int Power;
     public float Delay;
+    public string Description;
     public int Cost;
     public int TargetCount;
 

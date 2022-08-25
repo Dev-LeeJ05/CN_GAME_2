@@ -4,4 +4,11 @@ namespace Define{
         Left,
         Right
     }
+    public enum TowerType
+    {
+        Basic=0,
+        Splash,
+        Slow,
+        Multi
+    }
 }

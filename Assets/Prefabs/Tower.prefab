@@ -111,9 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933c13a7744f8f84494b718edc3e629a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level: 0
-  Power: 0
-  Delay: 0
+  Type: 0
+  Name: "\uAE30\uBCF8 \uD0C0\uC6CC"
+  Level: 1
+  Power: 3
+  Delay: 2
+  Description: 
   Cost: 0
   TargetCount: 0
   TargetEnemies: []
