@@ -11,4 +11,11 @@ namespace Define{
         Slow,
         Multi
     }
+    public enum EnemyType
+    {
+        Basic,
+        Buff,
+        Item,
+        Damage
+    }
 }

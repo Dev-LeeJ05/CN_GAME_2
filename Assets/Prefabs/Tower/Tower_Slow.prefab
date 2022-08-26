@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5185799243517549852}
   - component: {fileID: 5185799243517549851}
   - component: {fileID: 5185799243517549850}
-  - component: {fileID: 4109946207284958420}
+  - component: {fileID: -7804692257978816255}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower_Slow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &4109946207284958420
+--- !u!114 &-7804692257978816255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,15 +108,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5185799243517549831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 933c13a7744f8f84494b718edc3e629a, type: 3}
+  m_Script: {fileID: 11500000, guid: e9391873c1a98b148817dacacc172b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 0
-  Name: "\uAE30\uBCF8 \uD0C0\uC6CC"
+  Type: 2
+  Name: "\uB514\uBC84\uD504 \uD0C0\uC6CC"
   Level: 1
   Power: 3
-  Delay: 2
-  Description: 
-  Cost: 0
-  TargetCount: 0
+  Delay: 1
+  Description: "\uBC94\uC704 \uC548 \uC801\uC744 \uB290\uB9AC\uAC8C\uD55C\uB2E4."
+  Cost: 20
+  TargetCount: 1
   TargetEnemies: []

@@ -17,8 +17,10 @@ public class Area : MonoBehaviour
     public void PlaceTower(GameObject towerobj)
     {
         GameObject obj = Instantiate(towerobj, TowerParent);
-        obj.transform.position = Vector3.zero;
         HasTower = true;
-        Type = obj.GetComponent<Tower>().Type;
+        obj.TryGetComponent<Tower>(out Tower tower);
+        Type = tower.Type;
+        tower.LevelToSet(1);
+        tower.LevelToSet_Stat(1);        
     }
 }

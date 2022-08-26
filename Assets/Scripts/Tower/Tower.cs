@@ -5,7 +5,7 @@ using Define;
 
 public abstract class Tower : MonoBehaviour
 {
-    [Header("Tower Stat")]
+    [Header("Tower Info Stat")]
     public TowerType Type;
     public string Name;
     public int Level;
@@ -15,6 +15,11 @@ public abstract class Tower : MonoBehaviour
     public int Cost;
     public int TargetCount;
 
+    [Header("Tower Stat")]
+    public int Level_Stat;
+    protected int Power_Stat;
+    protected float Delay_Stat;
+
     LayerMask Enemy;
 
     [SerializeField]
@@ -22,7 +27,7 @@ public abstract class Tower : MonoBehaviour
 
     Vector3 Pivot;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         Enemy = LayerMask.GetMask("Enemy");
         Pivot = new Vector3(transform.position.x, 0, transform.position.z);
@@ -30,7 +35,7 @@ public abstract class Tower : MonoBehaviour
 
     void Start()
     {
-        
+        Level_Stat = 1;
     }
 
     protected void Update()
@@ -110,4 +115,8 @@ public abstract class Tower : MonoBehaviour
     }
 
     protected abstract void Effect();
+
+    public abstract void LevelToSet(int setlevel);
+
+    public abstract void LevelToSet_Stat(int setlevel);
 }
