@@ -9,10 +9,6 @@ public class Tower_Multi : Tower
         
     }
 
-    protected override void Effect()
-    {
-    }
-
     public override void LevelToSet(int setlevel)
     {
         Level = setlevel;

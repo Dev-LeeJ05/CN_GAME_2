@@ -12,10 +12,6 @@ public class Tower_Splash : Tower
         
     }
 
-    protected override void Effect()
-    {
-    }
-
     public override void LevelToSet(int setlevel)
     {
         Level = setlevel;

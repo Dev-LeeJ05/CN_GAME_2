@@ -14,10 +14,6 @@ public class Tower_Slow : Tower
 
     }
 
-    protected override void Effect()
-    {
-    }
-
     public override void LevelToSet(int setlevel)
     {
         Level = setlevel;

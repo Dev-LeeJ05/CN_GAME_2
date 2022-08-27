@@ -20,6 +20,12 @@ public abstract class Tower : MonoBehaviour
     protected int Power_Stat;
     protected float Delay_Stat;
 
+    [Header("Bullet")]
+    [SerializeField]
+    private GameObject BulletPrefab;
+    [SerializeField]
+    private Transform FirePos;
+
     LayerMask Enemy;
 
     [SerializeField]
@@ -36,6 +42,17 @@ public abstract class Tower : MonoBehaviour
     void Start()
     {
         Level_Stat = 1;
+    }
+
+    protected void Fire()
+    {
+        for (int i = 0; i < TargetEnemies.Count; i++)
+        {
+            GameObject obj = Instantiate(BulletPrefab, this.transform);
+            obj.transform.position = FirePos.position;
+            obj.GetComponent<Bullet>().Target = TargetEnemies[i];
+        }
+        Invoke("Fire", Delay_Stat);
     }
 
     protected void Update()
@@ -113,8 +130,6 @@ public abstract class Tower : MonoBehaviour
             TargetEnemies.Add(ClosetTarget);
         }
     }
-
-    protected abstract void Effect();
 
     public abstract void LevelToSet(int setlevel);
 

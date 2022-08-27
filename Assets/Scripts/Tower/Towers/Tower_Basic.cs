@@ -16,10 +16,6 @@ public class Tower_Basic : Tower
         
     }
 
-    protected override void Effect()
-    {
-    }
-
     public override void LevelToSet(int setlevel)
     {
         Level = setlevel;
